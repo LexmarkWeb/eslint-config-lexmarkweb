@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-lexmarkweb",
+  "version": "0.1.0",
+  "description": "ESLint configuration for Lexmark Web Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexmarkWeb/eslint-config-lexmarkweb.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "lint",
+    "lexmark"
+  ],
+  "author": "HaroldPutman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LexmarkWeb/eslint-config-lexmarkweb/issues"
+  },
+  "homepage": "https://github.com/LexmarkWeb/eslint-config-lexmarkweb#readme",
+  "devDependencies": {
+    "eslint": "^3.10.0",
+    "mocha": "^3.1.2"
+  }
+}
