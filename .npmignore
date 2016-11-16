@@ -1,3 +1,4 @@
 test
 node_modules
 .eslintrc.json
+.travis.yml
