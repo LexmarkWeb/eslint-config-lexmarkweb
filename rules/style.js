@@ -41,7 +41,7 @@ module.exports = {
 
     // require function expressions to have a name
     // http://eslint.org/docs/rules/func-names
-    'func-names': 'warn',
+    'func-names': ['warn', 'as-needed'],
 
     // enforces use of function declarations or expressions
     // http://eslint.org/docs/rules/func-style
