@@ -56,4 +56,17 @@ describe('Bad Lint', () => {
     const report = new eslint.CLIEngine().executeOnText('if (this) {\n\tthat();\n};');
     expectReport(report).contains('no-tabs');
   });
+
+  it('should notice extra spaces', () => {
+    const report = new eslint.CLIEngine().executeOnText('var a = 4  + 3;');
+    console.dir(report.results[0].messages);
+    expectReport(report).contains('no-multi-spaces');
+  });
+
+  it('should flag long lines', () => {
+    const report = new eslint.CLIEngine().executeOnText(
+      'function functionWithNamesBeginningWithLongStringsOfCharacters(kajhskdhasdjahskjdhas, aosjdhkjahsdkjhasdsad, ' +
+      'asjdhkjsahdkjaksjdh) {\n    return 2;\n}\n');
+    expectReport(report).contains('max-len');
+  });
 });
