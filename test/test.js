@@ -68,4 +68,10 @@ describe('Bad Lint', () => {
       'asjdhkjsahdkjaksjdh) {\n    return 2;\n}\n');
     expectReport(report).contains('max-len');
   });
+
+  it('should require quotes around keywords in object property names', () => {
+    const report = new eslint.CLIEngine().executeOnText(
+      'var obj = { function: \'no\' }');
+    expectReport(report).contains('quote-props');
+  });
 });

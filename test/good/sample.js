@@ -16,4 +16,24 @@ function fizzBuzz(n) {
   }
 }
 
+// Using always quotes.
+var object1 = {
+  'bad': true,
+  'indent-size': 2,
+  'with space': true,
+  'break': 'yes',
+  '42': ['life', 'universe', 'everything']
+};
+
+// Only using necessary quotes
+var object2 = {
+  bad: true,
+  'indent-size': 2,
+  'with space': true,
+  'break': 'yes',
+  42: ['life', 'universe', 'everything']
+};
+
 fizzBuzz(20);
+console.log(object1);
+console.log(object2);
