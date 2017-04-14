@@ -59,7 +59,6 @@ describe('Bad Lint', () => {
 
   it('should notice extra spaces', () => {
     const report = new eslint.CLIEngine().executeOnText('var a = 4  + 3;');
-    console.dir(report.results[0].messages);
     expectReport(report).contains('no-multi-spaces');
   });
 
