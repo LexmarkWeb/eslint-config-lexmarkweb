@@ -125,13 +125,16 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // http://eslint.org/docs/rules/max-len
-    'max-len': ['error', 100, 2, {
+    'max-len': ['error', {
+      code: 120,
+      tabWidth: 2,
       ignoreUrls: true,
       ignoreComments: false,
-//      ignoreRegExpLiterals: true,
+      ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true
     }],
+
     // specify the max number of lines in a file
     // http://eslint.org/docs/rules/max-lines
     'max-lines': ['off', {
@@ -239,8 +242,6 @@ module.exports = {
     // http://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': [
       'error',
-      'ForInStatement',
-      'ForOfStatement',
       'LabeledStatement',
       'WithStatement',
     ],
