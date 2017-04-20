@@ -35,5 +35,8 @@ var object2 = {
 };
 
 fizzBuzz(20);
+var a = 4 + 3 - 2;
+var b = (4 * 7) - 1;
+console.log(a + b);
 console.log(object1);
 console.log(object2);
