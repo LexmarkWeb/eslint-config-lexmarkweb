@@ -74,4 +74,10 @@ describe('Bad Lint', () => {
       'var obj = { function: \'no\' }');
     expectReport(report).contains('quote-props');
   });
+
+  it('should flag useless escape characters', () => {
+    const report = new eslint.CLIEngine().executeOnText(
+      'var foo = \'This \\: is useless escape\';');
+    expectReport(report).contains('no-useless-escape');
+  });
 });
