@@ -264,6 +264,10 @@ module.exports = {
     // disallow dangling underscores in identifiers
     'no-underscore-dangle': ['error', { allowAfterThis: false }],
 
+
+    // disallow backslash escaping characters unnecessarily in string
+    'no-useless-escape': 'error',
+
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary

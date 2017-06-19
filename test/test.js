@@ -80,4 +80,10 @@ describe('Bad Lint', () => {
       'if (foo) foo++;');
     expectReport(report).contains('curly');
   });
+
+  it('should flag useless escape characters', () => {
+    const report = new eslint.CLIEngine().executeOnText(
+      'var foo = \'This \\: is useless escape\';');
+    expectReport(report).contains('no-useless-escape');
+  });
 });
