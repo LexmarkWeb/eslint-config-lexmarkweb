@@ -25,6 +25,9 @@ module.exports = {
     // enforces consistent naming when capturing the current execution context
     'consistent-this': 'off',
 
+    // ensure that block statements are wrapped in curly braces
+    'curly': 'error',
+
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': ['error', 'always'],
 
