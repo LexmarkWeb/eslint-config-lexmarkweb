@@ -74,4 +74,10 @@ describe('Bad Lint', () => {
       'var obj = { function: \'no\' }');
     expectReport(report).contains('quote-props');
   });
+
+  it('should require curly braces always', () => {
+    const report = new eslint.CLIEngine().executeOnText(
+      'if (foo) foo++;');
+    expectReport(report).contains('curly');
+  });
 });
