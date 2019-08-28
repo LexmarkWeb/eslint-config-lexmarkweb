@@ -109,9 +109,9 @@ module.exports = {
       applyDefaultPatterns: true,
     }],
 
-    // disallow mixed 'LF' and 'CRLF' as linebreaks
+    // Git will take care of the linebreaks. 
     // http://eslint.org/docs/rules/linebreak-style
-    'linebreak-style': ['error', 'unix'],
+    'linebreak-style': 'off',
 
     // enforces empty lines around comments
     'lines-around-comment': 'off',
