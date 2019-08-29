@@ -33,16 +33,6 @@ and Linux users follow a similar process.
     - Set `Use global ESLint installation`
   4. When you open a Javascript file errors will be highlighted.
 
-
-- [SublimeText](https://github.com/roadhump/SublimeLinter-eslint)
-  1. Choose `Tools | Install Package Control...` if you have not done that already.
-  2. From `Tools | Command Pallette` type install and select `Package control: Install Package`
-  3. Type `SublimeLinter` and install the SublimeLinter package.
-  4. From `Tools | Command Pallette` type install and select `Package control: Install Package`
-  5. Type `contrib-eslint` and install the `submlimelinter-contrinb-eslint` package.
-  6. When you open a Javascript file errors will be highlighted.
-
-
 - [IntelliJ](http://plugins.jetbrains.com/plugin/7494)
   1. From `IntelliJ Idea | Preferences | Plugins` click `Browse repositories...` and search for ESLint.
   2. Restart IntelliJ
@@ -53,6 +43,17 @@ and Linux users follow a similar process.
     - Select `Let eslint search for .eslint up the folder tree`
   4. When you open a Javascript file errors will be highlighted.
 
+- [SublimeText](https://github.com/roadhump/SublimeLinter-eslint)
+  1. Choose `Tools | Install Package Control...` if you have not done that already.
+  2. From `Tools | Command Pallette` type install and select `Package control: Install Package`
+  3. Type `SublimeLinter` and install the SublimeLinter package.
+  4. From `Tools | Command Pallette` type install and select `Package control: Install Package`
+  5. Type `contrib-eslint` and install the `submlimelinter-contrinb-eslint` package.
+  6. When you open a Javascript file errors will be highlighted.
+
+- [VisualStudio Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  1. Ctrl-Shift-X and find and install the [ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) by Dirk Baeumer.
+  2. When you open a Javascript file errors will be highlighted.
 
 - [VIM](https://github.com/vim-syntastic/syntastic).
   If you use VIM you don't need step by step instructions. :wink:
