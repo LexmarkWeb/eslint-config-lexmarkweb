@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lexmarkweb",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "ESLint configuration for Lexmark Web Team",
   "main": "index.js",
   "scripts": {
